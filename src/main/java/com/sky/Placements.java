@@ -5,11 +5,11 @@ public class Placements {
 
         public static String getPlacementString(int placement) {
 
-            if (placement % 10 == 1 && placement % 100 != 11) {
+            if (placement % 10 == 1) {
                 return placement + "st";
-            } else if (placement % 10 == 2 && placement % 100 != 12) {
+            } else if (placement % 10 == 2) {
                 return placement + "nd";
-            } else if (placement % 10 == 3 && placement % 100 != 13) {
+            } else if (placement % 10 == 3) {
                 return placement + "rd";
             } else {
                 return placement + "th";
